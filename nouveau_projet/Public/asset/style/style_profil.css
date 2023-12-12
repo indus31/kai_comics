@@ -1,0 +1,414 @@
+body{
+    background-color: #9BCAF2;
+    width:100%;
+    height:100%;
+}
+
+#haut_page{
+    width:75rem;
+    height:30rem;
+    background-color:brown;
+    
+}
+
+#partie_gauche{
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:30%;
+    height:100%;
+    background-color: #9BCAF2;
+
+}
+#photo_profil{
+    margin:20px;
+    border-radius:200px;
+    width:195px;
+    height:178px;
+    background-size: cover;
+    background-image:url("Public\asset\img\profil_default.jpg");
+
+}
+#cadre_nom{
+    
+    margin:20px;
+    background-color: #0388A6;
+    width:10rem;
+    height:4.5rem;
+    border-radius:10px;
+
+}
+#nom_utilisateur{
+    font-size:1.1rem;
+    position:absolute;
+    top:14.5rem;
+    color:#F2C3A7;
+
+}
+#statut_utilisateur{
+    font-size:1.1rem;
+    color:#F2C3A7;
+    position:absolute;
+    top:17rem;
+
+}
+#settings{
+    position:absolute;
+    top:340px;
+    margin:10px;
+    width:20px;
+    height:20px;
+
+}
+#container_settings{
+  
+    margin:20px;
+    width:40%;
+    height:5%;
+    
+   
+    
+
+}
+#container_settings p{
+    position:absolute;
+    top:333px;
+    left:160px;
+
+}
+
+/* #photo_bandeau{
+
+
+
+} */
+ */
+#container_changer_photo_profil{
+
+    position:absolute;
+    top:30rem;
+    right:20rem;  
+    background-color: #0388A6;
+    border-radius:10px;
+    width:15rem;
+    height:1.5rem;
+}
+#container_changer_photo_profil h3{
+    color:#F2C3A7;
+    position:absolute;
+    font-size: 1.1rem;
+    width:170px;
+    
+    right:2rem;
+    top:-1rem;
+
+}
+#container_changer_photo_profil img{
+    width:20px;
+    height:20px;
+}
+
+#container_changer_photo_bandeau{
+    position:absolute;
+    top:34rem;
+    right:20rem;  
+    background-color: #0388A6;
+    border-radius:10px;
+    width:15rem;
+    height:1.5rem;
+}
+#container_changer_photo_bandeau h3{
+    color:#F2C3A7;
+    position:absolute;
+    font-size: 1.1rem;
+    width:12rem;
+    
+    right:1.2rem;
+    top:-1rem;
+
+}
+#container_changer_photo_bandeau img{
+    width:20px;
+    height:20px;
+}
+#content_user{
+    display:flex;
+    margin-left:370px;
+
+}
+#description_user{
+    width: 16rem;
+    height:6rem;
+    border:#0388A6 1px solid;
+    border-radius: 10px;
+}
+
+/*BREAKPOINT 1200*/
+@media (max-width: 1200px){
+    #haut_page{
+        width:65rem;
+        height:32rem;
+        background-image: url(/img/42613.jpg);
+        background-size: cover;
+        
+    }
+    #description_user{
+        position:absolute;
+        top:35rem;
+        left:15rem;
+        width: 16rem;
+        height:6rem;
+        border:#0388A6 1px solid;
+        border-radius: 10px;
+    }
+    #container_settings{
+  
+        margin:20px;
+        width:40%;
+        height:5%;
+        
+       
+        
+    
+    }
+    #container_settings p{
+        display:none;
+        position:absolute;
+        top:333px;
+        left:160px;
+    
+    }
+    #settings{
+        position:absolute;
+        top:32rem;
+        right:1rem;
+        
+        width:42px;
+        height:42px;
+    
+    }
+
+}
+
+/*BREAKPOINT 1000PX*/
+@media (max-width: 1000px){
+    #haut_page{
+        width:50rem;
+        height:32rem;
+        background-image: url(/img/42613.jpg);
+        background-size: cover;
+        
+    }
+    #settings{
+        position:absolute;
+        top:32rem;
+        right:1rem;
+        
+        width:42px;
+        height:42px;
+    
+    }
+
+}
+/*BREAKPOINT 700PX*/
+@media (max-width: 700px){
+    #haut_page{
+        width:45rem;
+        height:32rem;
+        background-image: url(/img/42613.jpg);
+        background-size: cover;
+        
+    }
+    #description_user{
+        position:absolute;
+        top:75rem;
+        left:1rem;
+        width: 16rem;
+        height:6rem;
+        border:#0388A6 1px solid;
+        border-radius: 10px;
+    }
+    #settings{
+        position:absolute;
+        top:32rem;
+        right:1rem;
+        
+        width:42px;
+        height:42px;
+    
+    }
+
+}
+
+
+/*BREAKPOINT 550px*/
+@media (max-width: 550px){
+
+    #haut_page{
+        width: 465px;
+        height:250px;
+        background-image: url(/img/42613.jpg);
+        background-size: cover;
+        
+    }
+    
+    #partie_gauche{
+        
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:0;
+        height:0;
+        background-color: blue;
+    
+    }
+    #photo_profil{
+        position: absolute;
+        top:40px;
+        left:5px;
+        border-radius:200px;
+        width:100px;
+        height:100px;
+        background-size: cover;
+        background-image:url(img/logo_2.png);
+    
+    }
+    #cadre_nom{
+        
+        position:absolute;
+        top:250px;
+        left:-0.7rem;
+        background-color: #0388A6;
+        width:150px;
+        height:64px;
+        border-radius:10px;
+    
+    }
+    #nom_utilisateur{
+        
+        position:absolute;
+        top:-0.8rem;
+        left:0.5rem;
+        color:#F2C3A7;
+    
+    }
+    #statut_utilisateur{
+        color:#F2C3A7;
+        position:absolute;
+        top:1rem;
+        left:0.5rem;
+    
+    }
+    #settings{
+        position:absolute;
+        top:17rem;
+        right:1rem;
+        
+        width:42px;
+        height:42px;
+    
+    }
+    #container_settings{
+      
+        margin:20px;
+        width:40%;
+        height:5%;
+        background-color: red;
+       
+        
+    
+    }
+    #container_settings p{
+        display:none;
+        position:absolute;
+        top:333px;
+        left:160px;
+    
+    }
+    
+    /* #photo_bandeau{
+    
+    
+    } */
+    #container_changer_photo_profil{
+    
+        position:absolute;
+        top:490px;
+        right:320px;
+        
+         
+        background-color: #9BCAF2;
+        border-radius: 10px;
+        width:15%;
+        height:30px;
+    }
+    #container_changer_photo_profil h3{
+        color:#F2C3A7;
+        position:absolute;
+        width:170px;
+        display:none;
+        right:25px;
+        bottom:-11px;
+    
+    }
+    #container_changer_photo_profil img{
+        
+        position:absolute;
+        top:-19rem;
+        left:-5rem;
+        width:20px;
+        height:20px;
+        border-radius: 100%;
+        border: #0388A6 solid 1px;
+        background-color: #9BCAF2;
+    }
+    
+    #container_changer_photo_bandeau{
+    
+        position:absolute;
+        top:540px;
+        right:320px;
+    
+         
+        background-color: #9BCAF2;
+        border-radius: 10px;
+        width:15%;
+        height:30px;
+    }
+    #container_changer_photo_bandeau h3{
+        color:#F2C3A7;
+        display:none;
+        position:absolute;
+        width:200px;
+        
+        right:8px;
+        bottom:-11px;
+    
+    }
+    #container_changer_photo_bandeau img{
+        width:20px;
+        height:20px;
+        position:absolute;
+        top:-20rem;
+        left:-5rem;
+        background-color: #9BCAF2;
+        border-radius: 100%;
+        border: #F2C3A7 solid 1px;
+    }
+    #content_user{
+        display:flex;
+        margin-left:370px;
+    
+    }
+    #description_user{
+        
+        width:20rem;
+        height:5rem;
+        border:#0388A6 1px solid;
+        border-radius: 10px;
+        position:absolute;
+        top:20.5rem;
+        left:0.3rem;
+    }
+}
